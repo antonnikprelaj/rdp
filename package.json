@@ -1,0 +1,19 @@
+{
+  "name": "rdp",
+  "version": "1.0.0",
+  "description": "Rapid data prototyping",
+  "scripts": {
+    "server": "json-server --watch --port 3020",
+    "blog": "npm run server apps/blog.json --port 3030",
+    "users": "npm run server generators/users.js",
+    "transactions": "npm run server generators/transactions.js",
+    "cards": "npm run server  generators/cards.js"
+  },
+  "keywords": [],
+  "author": "Anton Nikprelaj (http://antonnikprelaj.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "faker": "^4.1.0",
+    "json-server": "^0.14.0"
+  }
+}
